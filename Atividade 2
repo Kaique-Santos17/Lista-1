@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+
+public class Main {
+
+   
+    public static void main(String[] args) {
+        
+        Scanner in = new Scanner(System.in);
+        System.out.println("\nDigite o Alimento (Vegetariano, Peixe, Frango ou Carne): ");
+        String alimento = in.nextLine();
+        System.out.println("\nDigite a Bebida (Chá, Refri Diet, Suco de melao ou Suco de Laranja): ");
+        String bebida = in.nextLine();
+        System.out.println("\nDigite a Sobremesa (Abacaxi, Sorvete Diet,Mousse de chocolate,mousse diet): ");
+        String sobremesa = in.nextLine();
+        int calorias = 350;
+        int caloriasbebida = 100;
+        int caloriassobremesa = 200;
+    if(alimento.toLowerCase().equals("vegetariano")){
+        int calorias = 180;
+    } else if(alimento.toLowerCase().equals("peixe")){
+        int calorias = 230;
+    } else if(alimento.toLowerCase().equals("frango")){
+        int calorias = 250;
+    }
+
+    if(bebida.toLowerCase().equals("chá")){
+        int calorias bebida = 20;
+    } else if(bebida.toLowerCase().equals("refri diet")){
+        int calorias bebida = 65;
+    } else if(bebida.toLowerCase().equals("suco de melancia")){
+        int calorias bebida = 70;
+    }
+
+    if(sobremesa.toLowerCase().equals("abacaxi")){
+        int calorias sobremesa = 75;
+    } else if(sobremesa.toLowerCase().equals("mousse diet")){
+        int calorias sobremesa = 170;
+    } else if(sobremesa.toLowerCase().equals("sorvete diet")){
+        int calorias sobremesa = 110;
+    }
+    int resultado = calorias+caloriasbebida+caloriassobremesa;
+    System.out.println("Total de Calorias da Refeição: " +resultado);
+    }
+    
+}
